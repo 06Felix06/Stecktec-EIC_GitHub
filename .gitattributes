@@ -1,2 +1,2 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Interaktive Stuecklisten (aus KiCad generiert) nicht in der Sprachstatistik zaehlen
+**/ibom.html linguist-generated
