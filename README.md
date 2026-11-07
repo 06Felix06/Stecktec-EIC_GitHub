@@ -239,6 +239,6 @@ Das Projekt hat meine Begeisterung für die Entwicklung intelligenter, nachhalti
 
 ## Lizenz
 
-Dieses Projekt steht – wie schon die Projektdokumentation – unter der Lizenz [Creative Commons Namensnennung – Nicht kommerziell 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/deed.de). Siehe [LICENSE](LICENSE).
+Dieses Projekt steht unter der Lizenz [Creative Commons Namensnennung – Nicht kommerziell 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/deed.de). Siehe [LICENSE](LICENSE).
 
 Betreut von Martin De Tomaso und Ivan Huber, TFO Meran.
