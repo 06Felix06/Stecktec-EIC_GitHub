@@ -12,7 +12,7 @@ Maturaprojekt (Abschlussprojekt) im Schuljahr 2024/25 an der Technologischen Fac
 
 <p align="center"><em>Hauptplatine (links) und Sensorplatine (rechts) – beide selbst in KiCad entworfen</em></p>
 
-📄 **Die komplette Projektdokumentation (64 Seiten) liegt hier: [docs/Projektdokumentation_StecktecEIC.pdf](docs/Projektdokumentation_StecktecEIC.pdf)**
+**Die komplette Projektdokumentation (64 Seiten) liegt hier: [docs/Projektdokumentation_StecktecEIC.pdf](docs/Projektdokumentation_StecktecEIC.pdf)**
 
 ---
 
@@ -27,32 +27,31 @@ Maturaprojekt (Abschlussprojekt) im Schuljahr 2024/25 an der Technologischen Fac
 - [Projekt in Zahlen](#projekt-in-zahlen)
 - [Aufbau des Repositorys](#aufbau-des-repositorys)
 - [Fazit](#fazit)
-- [Abstract (English)](#abstract-english)
 - [Lizenz](#lizenz)
 
 ---
 
 ## Was ist Stecktec EIC?
 
-> Stecktec EIC ist ein modulares intelligentes Bewässerungssystem, das speziell für den Einsatz im Obst- und Beerenanbau, aber auch für private Gärten konzipiert wurde. Es besteht aus mehreren modularen Teilen und kann verschiedene Werte wie die Bodenfeuchtigkeit, Temperatur und Luftfeuchtigkeit messen und Bewässerungsventile schalten. Alles wird über eine benutzerfreundliche Smartphone-App gesteuert und überwacht. Das ermöglicht dem Bauern eine optimale Übersicht und Kontrolle über seine Felder.
+Stecktec EIC ist ein modulares intelligentes Bewässerungssystem, das speziell für den Einsatz im Obst- und Beerenanbau, aber auch für private Gärten konzipiert wurde. Es besteht aus mehreren modularen Teilen und kann verschiedene Werte wie die Bodenfeuchtigkeit, Temperatur und Luftfeuchtigkeit messen und Bewässerungsventile schalten. Alles wird über eine benutzerfreundliche Smartphone-App gesteuert und überwacht. Das ermöglicht dem Bauern eine optimale Übersicht und Kontrolle über seine Felder.
 
 **EIC** steht für **Easy Irrigation Control** – eine einfache und effiziente Steuerung der Bewässerung, mit dem Ziel, den Wasserverbrauch zu verringern.
 
 Kurz gesagt kann das System:
 
-- 🌱 **Bodenfeuchte messen** – mit einem Watermark-Saugspannungssensor (Irrometer 200SS), der misst, wie viel Wasser die Pflanze wirklich aus dem Boden ziehen kann
-- 🌡️ **Temperatur und Luftfeuchtigkeit messen** (BME280)
-- 💧 **Magnetventile schalten** – bistabile 12-V-Ventile, die nur beim Umschalten Strom brauchen
-- 📡 **Kilometerweit funken** – Sensorstationen sprechen per LoRa mit der Hauptstation
-- 🌐 **Online gehen** – die Hauptstation ist per Mobilfunk (SIM7000) mit einer Firebase-Datenbank verbunden
-- 📱 **Per App bedient werden** – eigene React-Native-App für Android und iOS
-- ☀️ **Autark laufen** – 18650-Akkus, die über ein kleines Solarpanel geladen werden
+- **Bodenfeuchte messen** – mit einem Watermark-Saugspannungssensor (Irrometer 200SS), der misst, wie viel Wasser die Pflanze wirklich aus dem Boden ziehen kann
+- **Temperatur und Luftfeuchtigkeit messen** (BME280)
+- **Magnetventile schalten** – bistabile 12-V-Ventile, die nur beim Umschalten Strom brauchen
+- **Kilometerweit funken** – Sensorstationen sprechen per LoRa mit der Hauptstation
+- **Online gehen** – die Hauptstation ist per Mobilfunk (SIM7000) mit einer Firebase-Datenbank verbunden
+- **Per App bedient werden** – eigene React-Native-App für Android und iOS
+- **Autark laufen** – 18650-Akkus, die über ein kleines Solarpanel geladen werden
 
 ## Idee und Motivation
 
-> Die Idee zum EIC-Bewässerungssystem entstand aus der Beobachtung, dass viele bestehende landwirtschaftliche Bewässerungslösungen entweder zu teuer, zu kompliziert oder unzureichend automatisiert sind. Insbesondere kleinere landwirtschaftliche Betriebe oder Privatpersonen verfügen häufig nicht über die Mittel, um teure Systeme mit vielen unnötigen Funktionen zu implementieren. Ziel war es daher, ein kostengünstiges, modulares und leicht erweiterbares System zu entwickeln, das zuverlässig arbeitet und sich an verschiedene Bedürfnisse anpassen lässt.
+Die Idee zum EIC-Bewässerungssystem entstand aus der Beobachtung, dass viele bestehende landwirtschaftliche Bewässerungslösungen entweder zu teuer, zu kompliziert oder unzureichend automatisiert sind. Insbesondere kleinere landwirtschaftliche Betriebe oder Privatpersonen verfügen häufig nicht über die Mittel, um teure Systeme mit vielen unnötigen Funktionen zu implementieren. Ziel war es daher, ein kostengünstiges, modulares und leicht erweiterbares System zu entwickeln, das zuverlässig arbeitet und sich an verschiedene Bedürfnisse anpassen lässt.
 
-> Ein weiterer wichtiger Beweggrund war die zunehmende Regulierung des landwirtschaftlichen Wasserverbrauchs. […] Eine intelligente Steuerung kann diesen Trend weiter unterstützen, indem sie den Wasserverbrauch anhand aktueller Sensordaten zusätzlich optimiert und nur dann bewässert, wenn es tatsächlich notwendig ist.
+Ein weiterer wichtiger Beweggrund war die zunehmende Regulierung des landwirtschaftlichen Wasserverbrauchs. Die Anforderungen an einen sparsamen und nachhaltigen Umgang mit Wasser steigen stetig. Bereits heute wird vielerorts auf ressourcenschonende Systeme wie Tröpfchenbewässerung umgestellt. Eine intelligente Steuerung kann diesen Trend weiter unterstützen, indem sie den Wasserverbrauch anhand aktueller Sensordaten zusätzlich optimiert und nur dann bewässert, wenn es tatsächlich notwendig ist.
 
 Die Idee kam direkt vom eigenen Apfelbetrieb der Familie in Südtirol: Mein Vater hat oft davon gesprochen, wie praktisch ein intelligentes Bewässerungssystem wäre – und ich wollte ein Projekt umsetzen, das einen echten Nutzen im Alltag hat.
 
@@ -64,7 +63,7 @@ Das System besteht aus einer **Hauptstation** und einer oder mehreren **Sensorst
   <img src="docs/images/blockschaltbild.png" width="75%" alt="Blockschaltbild Stecktec EIC">
 </p>
 
-> Die grafische Darstellung veranschaulicht, wie alle einzelnen Komponenten miteinander kommunizieren – sei es über LoRa, Internet oder über direkte Hardwareverbindungen.
+Die grafische Darstellung veranschaulicht, wie alle einzelnen Komponenten miteinander kommunizieren – sei es über LoRa, Internet oder über direkte Hardwareverbindungen.
 
 Der Datenfluss im Überblick:
 
@@ -88,7 +87,7 @@ flowchart LR
 
 ## Hardware
 
-> Das gesamte System wurde bewusst modular aufgebaut, indem die Funktionen auf mehrere Unterplatinen verteilt wurden. Diese Aufteilung bietet entscheidende Vorteile in Bezug auf Wartung, Erweiterbarkeit und Fehlersuche. Durch die Trennung der Hauptfunktionen – wie Stromversorgung, Sensorik, Steuerung und Aktorik – auf eigene Platinen kann jede Komponente unabhängig getestet und bei Bedarf ausgetauscht oder erweitert werden, ohne das Gesamtsystem zu beeinträchtigen.
+Das gesamte System wurde bewusst modular aufgebaut, indem die Funktionen auf mehrere Unterplatinen verteilt wurden. Diese Aufteilung bietet entscheidende Vorteile in Bezug auf Wartung, Erweiterbarkeit und Fehlersuche. Durch die Trennung der Hauptfunktionen – wie Stromversorgung, Sensorik, Steuerung und Aktorik – auf eigene Platinen kann jede Komponente unabhängig getestet und bei Bedarf ausgetauscht oder erweitert werden, ohne das Gesamtsystem zu beeinträchtigen.
 
 Alle Platinen wurden mit **KiCad** gezeichnet und bei **JLCPCB** gefertigt; bestückt habe ich sie selbst von Hand. Die Erweiterungsplatinen werden über beschriftete Pinheader mit Verdrehschutz auf die Basisplatinen gesteckt.
 
@@ -112,9 +111,9 @@ Jeder Hardware-Ordner enthält das KiCad-Projekt (Schaltplan + Layout), wo vorha
 
 ### Hauptplatine
 
-> Die Hauptplatine bildet das Herzstück der EIC und vereint zahlreiche zuvor beschriebene Hardwarekomponenten auf einer kompakten Leiterplatte. Der zentrale Mikrocontroller ATmega328P-AU (Arduino-kompatibel) steuert alle angeschlossenen Module und übernimmt die gesamte Systemlogik.
+Die Hauptplatine bildet das Herzstück der EIC und vereint zahlreiche zuvor beschriebene Hardwarekomponenten auf einer kompakten Leiterplatte. Der zentrale Mikrocontroller ATmega328P-AU (Arduino-kompatibel) steuert alle angeschlossenen Module und übernimmt die gesamte Systemlogik.
 
-> Aufgrund der hohen Schaltungskomplexität und auch dank eines günstigen Angebots des Herstellers JLCPCB fiel die Entscheidung zugunsten einer sechs-Layer Platine. Dies ermöglichte die Platzierung separater Versorgungspolygone für +5 V, +3.3 V und GND auf den inneren Layern. Dadurch blieben sowohl der oberste (Top) als auch der unterste (Bottom) Layer sowie Layer 4 weitgehend frei von Versorgungsleitungen, was erheblich Platz für die Signalführung schuf und das Routen erleichterte.
+Aufgrund der hohen Schaltungskomplexität und auch dank eines günstigen Angebots des Herstellers JLCPCB fiel die Entscheidung zugunsten einer sechs-Layer Platine. Dies ermöglichte die Platzierung separater Versorgungspolygone für +5 V, +3.3 V und GND auf den inneren Layern. Dadurch blieben sowohl der oberste (Top) als auch der unterste (Bottom) Layer sowie Layer 4 weitgehend frei von Versorgungsleitungen, was erheblich Platz für die Signalführung schuf und das Routen erleichterte.
 
 Weitere Design-Entscheidungen: Testpunkte für die Inbetriebnahme, große Bauteile (SIM-Modul, Elkos, Akkuhalter) auf der Rückseite, alle Bauteile von Hand lötbar, und der 12-V-Step-Up für die Ventile wurde mit TI WEBENCH dimensioniert.
 
@@ -130,13 +129,13 @@ Weitere Design-Entscheidungen: Testpunkte für die Inbetriebnahme, große Bautei
   <img src="docs/images/sensorplatine_layout.png" width="70%" alt="Layout Sensorplatine">
 </p>
 
-> Für Erweiterungen verfügt die Sensorplatine über zwei Pinheader, auf die Zusatzmodule aufgesteckt werden können – zum Beispiel die Ventilsteuerungsplatine, mit der über eine H-Brücke (L298) zwei Magnetventile angesteuert werden können. Die Belegung der Pinheader wurde bewusst so gestaltet, dass auch beliebige andere Erweiterungen realisierbar sind.
+Für Erweiterungen verfügt die Sensorplatine über zwei Pinheader, auf die Zusatzmodule aufgesteckt werden können – zum Beispiel die Ventilsteuerungsplatine, mit der über eine H-Brücke (L298) zwei Magnetventile angesteuert werden können. Die Belegung der Pinheader wurde bewusst so gestaltet, dass auch beliebige andere Erweiterungen realisierbar sind.
 
 Der **Watermark-Sensor** wird nicht dauerhaft, sondern nur kurz für die Messung bestromt – und die Polarität wird dabei umgedreht. Sonst würden Elektrolyseprozesse im Sensor die Messwerte verfälschen und seine Lebensdauer verkürzen.
 
 ### Programmiergerät
 
-> Um den Umgang mit dem ATmega Chip zu erleichtern, habe ich ein eigenes Programmiergerät entwickelt, das zwei zentrale Funktionen in einem kompakten Aufbau vereint: das Brennen des Bootloaders auf einen ATmega328P-Mikrocontroller und das anschließende Hochladen von Programmen. […] Außerdem kann durch die Code-Upload-Funktion der Platz und die Kosten für die USB-TTL-Converter-Schaltung auf der zu programmierenden Platine eingespart werden, was sich vor allem bei einer Serienproduktion lohnen würde.
+Um den Umgang mit dem ATmega Chip zu erleichtern, habe ich ein eigenes Programmiergerät entwickelt, das zwei zentrale Funktionen in einem kompakten Aufbau vereint: das Brennen des Bootloaders auf einen ATmega328P-Mikrocontroller und das anschließende Hochladen von Programmen. Außerdem kann durch die Code-Upload-Funktion der Platz und die Kosten für die USB-TTL-Converter-Schaltung auf der zu programmierenden Platine eingespart werden, was sich vor allem bei einer Serienproduktion lohnen würde.
 
 Über vier Jumperleisten wechselt man zwischen **Bootloader-Modus** (das Gerät arbeitet wie ein Arduino Nano als ISP-Programmer über SPI) und **Code-Upload-Modus** (der USB-TTL-Wandler wird direkt mit dem Zielchip verbunden, der PC erkennt das Ganze wie einen normalen Arduino Nano).
 
@@ -154,37 +153,17 @@ Passende 3D-Druck-Gehäuse für Sensorstation und Programmiergerät liegen in [`
 
 ### LoRa-Kommunikation
 
-> Die Kommunikation zwischen der Hauptplatine und der Sensorplatine erfolgt über das LoRa E32-Modul und ist bidirektional durch die sogenannte Master-Slave-Kommunikation. Das bedeutet, die Hauptplatine sendet ein Datenpaket, auf das das Sensor-Modul mit einer Antwort reagiert. […] Die Sensorplatine sendet ein Datenpaket nur dann, wenn sie zuvor ein Datenpaket von der Hauptplatine empfangen hat. Dieses Kommunikationssystem hilft, den Stromverbrauch der Sensorplatine erheblich zu minimieren.
+Die Kommunikation zwischen der Hauptplatine und der Sensorplatine erfolgt über das LoRa E32-Modul und ist bidirektional durch die sogenannte Master-Slave-Kommunikation. Das bedeutet, die Hauptplatine sendet ein Datenpaket, auf das das Sensor-Modul mit einer Antwort reagiert. Die Sensorplatine sendet ein Datenpaket nur dann, wenn sie zuvor ein Datenpaket von der Hauptplatine empfangen hat. Dieses Kommunikationssystem hilft, den Stromverbrauch der Sensorplatine erheblich zu minimieren.
 
 ### Ventilansteuerung
 
-Weil einfache H-Brücken-ICs verwendet werden, darf es beim Umschalten nie einen Moment geben, in dem beide Steuerpins gleichzeitig einen Kurzschluss verursachen. Deshalb wird zuerst der Enable-Pin deaktiviert, dann umgeschaltet, und erst danach wieder freigegeben ([`firmware/hauptplatine/src/MainFunctions.h`](firmware/hauptplatine/src/MainFunctions.h)):
-
-```cpp
-void updateVent(uint8_t D1_pin, uint8_t D2_pin, bool state)
-{
-    if (state == true)
-    {
-        digitalWrite(ENABLE_PIN, LOW);
-        mcp.digitalWrite(D1_pin, LOW);
-        mcp.digitalWrite(D2_pin, HIGH);
-        digitalWrite(ENABLE_PIN, HIGH);
-    }
-    else
-    {
-        digitalWrite(ENABLE_PIN, LOW);
-        mcp.digitalWrite(D2_pin, LOW);
-        mcp.digitalWrite(D1_pin, HIGH);
-        digitalWrite(ENABLE_PIN, HIGH);
-    }
-}
-```
+Weil einfache H-Brücken-ICs verwendet werden, darf es beim Umschalten nie einen Moment geben, in dem beide Steuerpins gleichzeitig einen Kurzschluss verursachen. Deshalb wird zuerst der Enable-Pin deaktiviert, dann umgeschaltet, und erst danach wieder freigegeben (siehe [`firmware/hauptplatine/src/MainFunctions.h`](firmware/hauptplatine/src/MainFunctions.h)).
 
 ### Mobilfunk und Datenbank
 
 Die Hauptplatine baut die Mobilfunkverbindung (Hologram-IoT-SIM) nur kurz für jede Anfrage auf und trennt sie danach wieder, um Strom zu sparen. Zwei Funktionen reichen für die gesamte Kommunikation: `putValue(path, value)` schreibt einen Wert in die Datenbank, `getValue(path)` liest einen aus.
 
-> Die Entwicklung dieses Teils war eine der komplexesten Phasen im Projekt und erstreckte sich über mehrere Monate, was auch den Zeitplan etwas durcheinanderbrachte. Erst nach umfassender Recherche und Debugging konnte eine stabile Anbindung an die Firebase-Datenbank realisiert werden.
+Die Entwicklung dieses Teils war eine der komplexesten Phasen im Projekt und erstreckte sich über mehrere Monate, was auch den Zeitplan etwas durcheinanderbrachte. Erst nach umfassender Recherche und Debugging konnte eine stabile Anbindung an die Firebase-Datenbank realisiert werden.
 
 ### Smartphone-App
 
@@ -195,7 +174,7 @@ Die Hauptplatine baut die Mobilfunkverbindung (Hologram-IoT-SIM) nur kurz für j
   <img src="docs/images/app_config.png" width="22%" alt="App: Wiesen-Konfiguration">
 </p>
 
-> Im Tab „Wiesen Config“ können neue Wiesen angelegt und bestehende verwaltet werden. Jeder Eintrag enthält eine eindeutige ID, einen frei wählbaren Namen und die Seriennummer der dazugehörigen Hauptplatine. Zu jeder Wiese (Hauptmodul) können bis zu fünf Sensormodule hinzugefügt werden […]. Durch ein Rufzeichen-Symbol ist sofort erkennbar, bei welcher Wiese ein Problem vorliegt.
+Im Tab „Wiesen Config“ können neue Wiesen angelegt und bestehende verwaltet werden. Jeder Eintrag enthält eine eindeutige ID, einen frei wählbaren Namen und die Seriennummer der dazugehörigen Hauptplatine. Zu jeder Wiese (Hauptmodul) können bis zu fünf Sensormodule hinzugefügt werden. Durch ein Rufzeichen-Symbol ist sofort erkennbar, bei welcher Wiese ein Problem vorliegt.
 
 Im Bereich **Manuell** lassen sich die Ventile direkt oder per Timer schalten (praktisch z. B., um ein Leck im Tropfschlauch zu finden), unter **Sensoren** werden die Messwerte als Diagramme angezeigt. Der **Automatik**-Modus (Bewässerung nach Zeitplan oder Bodenfeuchte) war zum Projektende noch in Entwicklung.
 
@@ -206,8 +185,7 @@ Ein großer Teil des Projekts war Fehlersuche – und genau daraus habe ich am m
 - **ESP32-S3 → ATmega328P:** Die erste Hauptplatine basierte auf einem ESP32-S3. Das Hochladen war extrem unzuverlässig, und trotz deaktiviertem WLAN und Bluetooth lag der Ruhestrom bei über 100 mA – viel zu viel für ein Solar-System. Also habe ich zügig eine V2 mit dem ATmega328P entworfen, der auf der Sensorplatine schon funktionierte.
 - **SIM7080G → SIM7000:** Das ursprünglich geplante SIM7080G-Modul ließ sich nicht in Betrieb nehmen; erst mit dem SIM7000 klappte die Verbindung. Auch der Versuch, das Modul direkt über AT-Befehle zu steuern, scheiterte an unzuverlässigen Antworten – die TinyGSM-Library war die Lösung.
 - **Solarversorgung V1:** Der Laderegler (CN3791) und der Schutz-IC (DW01A) funktionierten auf der ersten Version nicht, vermutlich wegen Layoutfehlern. Für die V2 habe ich auf den TP5400 gewechselt und den Layoutvorschlag aus dem Datenblatt fast 1:1 übernommen – danach lief sie auf Anhieb.
-- **Der falsche Chip:**
-  > Es gibt zwei nahezu baugleiche Modelle – den MCP23017 und den MCP23S17. Der entscheidende Unterschied besteht darin, dass der MCP23017 über I2C und der MCP23S17 über SPI angesteuert wird. Dies habe ich bei der Bestellung jedoch übersehen und versehentlich den MCP23S17 bestellt und aufgelötet. […] Nachdem ich den korrekten MCP23017 eingebaut hatte, funktionierte der Port Expander auf Anhieb problemlos.
+- **Der falsche Chip:** Es gibt zwei nahezu baugleiche Modelle – den MCP23017 und den MCP23S17. Der entscheidende Unterschied besteht darin, dass der MCP23017 über I2C und der MCP23S17 über SPI angesteuert wird. Dies habe ich bei der Bestellung jedoch übersehen und versehentlich den MCP23S17 bestellt und aufgelötet. Nachdem ich den korrekten MCP23017 eingebaut hatte, funktionierte der Port Expander auf Anhieb problemlos.
 - **Offene Punkte:** Der gleichzeitige Betrieb von Port-Expander und SIM-Modul führte noch zu Fehlfunktionen (vermutlich Timer- bzw. Library-Konflikte), und der ATmega328P stößt mit allen Modulen gleichzeitig an seine Grenzen.
 
 Die ersten Versionen von Hauptplatine und Solarversorgung liegen zum Vergleich in [`hardware/archiv_V1`](hardware/archiv_V1).
@@ -253,15 +231,11 @@ Projektantrag, Pflichtenheft und weitere Planungsunterlagen liegen in [`docs/pro
 
 ## Fazit
 
-> Mit dem EIC-Bewässerungssystem wurde ein praxisnahes und zukunftsorientiertes Projekt umgesetzt, das moderne Technik mit den realen Anforderungen der Landwirtschaft verbindet. […]
+Mit dem EIC-Bewässerungssystem wurde ein praxisnahes und zukunftsorientiertes Projekt umgesetzt, das moderne Technik mit den realen Anforderungen der Landwirtschaft verbindet.
 
-> Natürlich lief nicht alles exakt nach Plan – einige Funktionen konnten innerhalb des Projektzeitraums nicht vollständig umgesetzt werden. Dennoch habe ich gerade aus diesen Herausforderungen wertvolle Erfahrungen gewonnen, die mir bei zukünftigen Projekten helfen werden, realistischer zu planen und flexibler auf unerwartete Schwierigkeiten zu reagieren.
+Natürlich lief nicht alles exakt nach Plan – einige Funktionen konnten innerhalb des Projektzeitraums nicht vollständig umgesetzt werden. Dennoch habe ich gerade aus diesen Herausforderungen wertvolle Erfahrungen gewonnen, die mir bei zukünftigen Projekten helfen werden, realistischer zu planen und flexibler auf unerwartete Schwierigkeiten zu reagieren.
 
-> Das Projekt hat meine Begeisterung für die Entwicklung intelligenter, nachhaltiger Lösungen gestärkt und mir gezeigt, wie viel Potenzial in der Verbindung von Technik und Umwelt steckt.
-
-## Abstract (English)
-
-> The EIC system is a smart and practical solution designed to make watering fields and gardens more efficient and sustainable. By using sensors that measure how dry the soil is, it ensures water is only used when necessary. This is especially important as water is becoming more limited in agriculture. The system can turn the water on and off automatically, according to the sensor readings. At the same time, it is simple and affordable enough for small farms or home gardens, making smart irrigation accessible to more people. Users can control the system through a smartphone app, which shows current conditions and allows settings to be adjusted easily. The system is also flexible and can be expanded with additional sensors or valves if needed. The idea came from our own apple farm at home. I always wanted to create something with a real-world use case, and when I remembered how often my dad talked about the benefits of a smart irrigation system, I quickly decided this is the perfect project.
+Das Projekt hat meine Begeisterung für die Entwicklung intelligenter, nachhaltiger Lösungen gestärkt und mir gezeigt, wie viel Potenzial in der Verbindung von Technik und Umwelt steckt.
 
 ## Lizenz
 
