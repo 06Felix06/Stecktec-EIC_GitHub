@@ -1,0 +1,34 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+Battery1,BAT-TH_L77.0-W39.9_BH-18650-A1BJ021,1,BH-18650-A1BJ021,C20606804
+"C1, C10, C12",0805,3,100nF,
+C11,0805,1,10µF,
+D1,0805,1,kopplungLED,
+D2,0805,1,PWR_LED,
+J1,PinSocket_1x10_P2.54mm_Vertical,1,Sens_ModuleJ1,
+J10,PinHeader_1x02_P2.54mm_Vertical,1,Jumper_LED,
+J11,PinSocket_1x06_P2.54mm_Vertical,1,USB_IN_Bat_volt,
+J12,USB_C_Receptacle_GCT_USB4125-xx-x_6P_TopMnt_Horizontal,1,USB_C_Receptacle_PowerOnly_6P,
+J2,PinSocket_1x10_P2.54mm_Vertical,1,Sens_ModuleJ2,
+J3,PinHeader_2x04_P2.54mm_Vertical,1,Bootload,
+J4,PinSocket_1x06_P2.54mm_Vertical,1,Bat_Solar_Vout,
+J5,PinSocket_1x07_P2.54mm_Vertical,1,LoraModule,
+J6,PinHeader_1x03_P2.54mm_Vertical,1,Befestigung,
+"R1, R2",0805,2,5.1k,
+"R3, R4",0805,2,10k,
+"R5, R6",0805,2,2k,
+"R7, R8",0805,2,470k,
+"RV_LED1, RV_LED2",0805,2,1k,
+Reset1,SW-SMD_4P-L6.2-W6.2-P4.50-LS8.6,1,LCSC: C2909692,C2909692
+Solar1,CONN-TH_B2B-PH-K-S,1,B2B-PH-K-S(LF)(SN),C131337
+TP1,TPSteckFelix,1,tpGND,
+TP2,TPSteckFelix,1,tp_+5V,
+TP3,TPSteckFelix,1,tp_+3V3,
+TP4,TPSteckFelix,1,tp_D9,
+TP5,TPSteckFelix,1,tp_Bat+,
+TP6,TPSteckFelix,1,tp_+12V,
+TP7,TPSteckFelix,1,tp_Solar+,
+U1,TQFP-32_L7.0-W7.0-P0.80-LS9.0-BL,1,ATMEGA328P-AU,C14877
+"U2, U3, U4",SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL,3,LM358,
+Watermark1,CONN-TH_B2P-VH-LF-SN,1,B2P-VH (LF)(SN),C160315
+X1,OSC-SMD_3P-L3.2-W1.3-P1.20-L,1,CSTNE16M0V53Z000R0,C783275
+bme280,CONN-TH_B4B-PH-K-S,1,BME280,C131334

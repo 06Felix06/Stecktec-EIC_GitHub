@@ -1,0 +1,27 @@
+# Node / Expo
+node_modules/
+.expo/
+dist/
+web-build/
+
+# PlatformIO
+.pio/
+.vscode/
+
+# KiCad
+*-backups/
+fp-info-cache
+*.lck
+*.kicad_prl
+_autosave-*
+*-bak
+
+# Secrets – niemals committen
+*.pem
+serviceAccountKey*.json
+.env*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
